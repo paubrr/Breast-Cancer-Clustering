@@ -21,9 +21,17 @@ K-Means achieved the highest silhouette score, followed closely by BIRCH. DBSCAN
 
 ### PCA Cluster Visualization
 
+<img width="2646" height="770" alt="pca_clusters" src="https://github.com/user-attachments/assets/d03e9235-f1d0-4317-a81e-28450521b19e" />
+
+
 ### Elbow Method (K-Means)
 
+<img width="1200" height="750" alt="elbow_method" src="https://github.com/user-attachments/assets/beee21d5-0039-4f9c-889e-29fa9f95eeef" />
+
+
 ### Silhouette Score Comparison
+
+<img width="1050" height="750" alt="silhouette_comparison" src="https://github.com/user-attachments/assets/a0ae6e40-533c-47f1-8b11-be039980812b" />
 
 
 ## Dataset
@@ -65,5 +73,6 @@ DBSCAN's not-so-good result here is very informative, since the data does not fo
 
 ------------------------------------------------------------------------------------------------------
  
-_Part of the AI with Python Certificate (2024-2025) - Universidad Anáhuac Online_\
+_Part of the AI with Python Certificate - Universidad Anáhuac Online_\
+(2024-2025)\
 _Author: Paula Bustos R_
