@@ -65,5 +65,5 @@ DBSCAN's not-so-good result here is very informative, since the data does not fo
 
 ------------------------------------------------------------------------------------------------------
  
-_Part of the AI with Python Certificate - Universidad Anáhuac Online_\
+_Part of the AI with Python Certificate (2024-2025) - Universidad Anáhuac Online_\
 _Author: Paula Bustos R_
