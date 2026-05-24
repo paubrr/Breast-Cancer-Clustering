@@ -40,23 +40,19 @@ K-Means achieved the highest silhouette score, followed closely by BIRCH. DBSCAN
 569 instances • 30 numeric features • 2 classes (benign/malignant)\
 Labels are not used during training, as this is a completely unsupervised analysis
 
-Loaded directly via sklearn.datasets.load_breast_cancer() -> No download needed, 
+Loaded directly via sklearn.datasets.load_breast_cancer() -> No download needed
 
 Source: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data 
 
 ## How to Run 
 
-**1. Clone the repository**\
-git clone https://github.com/paubrr/breast-cancer-clustering.git
-
-**2. Install dependencies**\
+```bash
+git clone https://github.com/paubrr/Breast-Cancer-Clustering.git
+cd Breast-Cancer-Clustering
 pip install -r requirements.txt
-
-**3. Create figures folder**\
 mkdir figures
-
-**4. Run**\
 python breast_cancer_clustering.py
+```
 
 ### Dependencies
 • numpy
