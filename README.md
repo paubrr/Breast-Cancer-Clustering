@@ -10,13 +10,13 @@ Comparative analysis of three unsupervised clustering algorithms (K-Means, DBSCA
 
 ## Results 
 
-| Algorithm | Silhouette Score |
-| -------- | -------- |
-| K-Means | 0.3785 |
-| BIRCH | 0.3460 |
-| DBSCAN | N/A |
+| Algorithm | Silhouette Score | Agreement with diagnosis |
+| -------- | -------- | -------- |
+| K-Means | 0.3785 | 91.2% |
+| BIRCH | 0.3460 | 90.8% |
+| DBSCAN | N/A | N/A |
 
-K-Means achieved the highest silhouette score, followed closely by BIRCH. DBSCAN was unable to form any meaningful clusters on this dataset. This is worth noting because the feature space of the Wisconsin dataset is not really density-separable at the setting tested (eps = 0.2). This highlights a known limitation of density-based methods on high-dimensional biomedical data.
+K-Means achieved the highest silhouette score, followed closely by BIRCH. At the setting tested (eps = 0.2), DBSCAN labelled all 455 training samples as noise and formed no clusters. This highlights a known limitation of density-based methods on high-dimensional biomedical data.
 
 
 ### PCA Cluster Visualization
