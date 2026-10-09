@@ -63,7 +63,7 @@ python breast_cancer_clustering.py
 
 ## Discussion
 
-  The two-cluster structure recovered by K-Means and BIRCH loosely mirrors the bening/malignant split present in the ground-truth labels, even though labels were never provided to the models. This suggests that the 30-cell nucleus measurements carry enough discriminative signal for unsupervised separation. 
+The two clusters recovered by K-Means and BIRCH match the benign/malignant diagnosis for about 91% of samples, even though labels were never provided to the models (they were used only afterwards, for evaluation). This suggests that the 30 cell-nucleus measurements carry enough discriminative signal for unsupervised separation. 
 
 DBSCAN's not-so-good result here is very informative, since the data does not form well-separated density regions in the normalized feature space, which is common in clinical tabular datasets where class boundaries are gradual rather than sharp. Future work could explore kernel-based density estimation or manifold learning as preprocessing steps before DBSCAN
 
