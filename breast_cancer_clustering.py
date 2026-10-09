@@ -82,6 +82,12 @@ print(f"\nDBSCAN — Clusters found: {n_clusters_dbscan} | Noise points: {n_nois
 birch = Birch(n_clusters=2)
 birch_labels = birch.fit_predict(X_train_scaled)
 
+# Compare clusters with the real diagnosis (labels used for evaluation only)
+y_train = cancer.target[X_train.index]
+for name, labels in [('K-Means', kmeans_labels), ('BIRCH', birch_labels)]:
+    match = (labels == y_train).mean()
+    print(f"{name}: {max(match, 1 - match):.1%} agreement with diagnosis")
+
 
 # PCA Visualization (All 3 algorithms)
 
